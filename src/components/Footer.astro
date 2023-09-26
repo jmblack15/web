@@ -1,0 +1,79 @@
+<footer>
+	<div>
+		<img src="/images/logo_footer.svg" alt="logo" />
+		<div class="questions_container">
+			<span>Pregunta 1</span>
+			<span>Pregunta 2</span>
+		</div>
+		<div>
+			<div class="contacts_container">
+				<img src="/icons/logo_wssp.svg" alt="" />
+				<span>wpp: 000 000 0000</span>
+			</div>
+			<div class="contacts_container">
+				<img src="/icons/logo_phone.svg" alt="" />
+				<span>phone: 000 000 0000</span>
+			</div>
+		</div>
+		<div>
+			<div class="contacts_container">
+				<img src="/icons/logo_wssp.svg" alt="" />
+				<span>wpp: 000 000 0000</span>
+			</div>
+			<div class="contacts_container">
+				<img src="/icons/logo_email.svg" alt="" />
+				<span>correo@correo.co</span>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<style>
+	footer {
+		height: 296px;
+		background-color: #021731;
+		margin-top: 60px;
+	}
+
+	footer > div {
+		max-width: 1440px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+		justify-content: space-around;
+	}
+
+	.questions_container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.questions_container span {
+		display: flex;
+		height: 43px;
+		flex-direction: column;
+		justify-content: center;
+		flex-shrink: 0;
+		color: #fff;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.contacts_container {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+    height: 43px;
+	}
+
+	.contacts_container span {
+		color: #fff;
+		text-align: center;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+</style>
