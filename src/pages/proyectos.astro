@@ -1,43 +1,43 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import CardProyects from "../components/CardProyects.astro";
+import Cardprojects from "../components/CardProjects.astro";
 
 const projects = [
 	{
 		title: "Tronex",
-		img: "/images/proyects/tronex.png",
+		img: "/images/projects/tronex.png",
 	},
 	{
 		title: "Yokomotor",
-		img: "/images/proyects/yokomotor.png",
+		img: "/images/projects/yokomotor.png",
 	},
 	{
 		title: "EyA CDA Autofull",
-		img: "/images/proyects/eya.png",
+		img: "/images/projects/eya.png",
 	},
 	{
 		title: "Mundial GyP",
-		img: "/images/proyects/mundialGyp.png",
+		img: "/images/projects/mundialGyp.png",
 	},
 	{
 		title: "EyA Guayacán de la Calera",
-		img: "/images/proyects/eyaGuayacan.png",
+		img: "/images/projects/eyaGuayacan.png",
 	},
 	{
 		title: "Edemco - Jericó",
-		img: "/images/proyects/EdemcoJerico.png",
+		img: "/images/projects/EdemcoJerico.png",
 	},
 	{
 		title: "Andrés Julián Rendón",
-		img: "/images/proyects/andresrendon.png",
+		img: "/images/projects/andresrendon.png",
 	},
 	{
 		title: "Tiendas Ara",
-		img: "/images/proyects/tiendaAra.png",
+		img: "/images/projects/tiendaAra.png",
 	},
 	{
 		title: "Juan Pedro Munera",
-		img: "/images/proyects/juanPedroMunera.png",
+		img: "/images/projects/juanPedroMunera.png",
 	},
 ];
 ---
@@ -57,7 +57,7 @@ const projects = [
 			<div class="projects_grid">
 				{
 					projects.map((project) => (
-						<CardProyects title={project.title} img={project.img} />
+						<Cardprojects title={project.title} img={project.img} />
 					))
 				}
 			</div>

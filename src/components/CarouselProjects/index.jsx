@@ -9,13 +9,12 @@ import './carouselProjects.css';
 export const CarouselProjects = () => {
   return (
     <>
-
       <div style={{
         display: 'flex',
         justifyContent: 'space-evenly'
       }}>
         <div className="card">
-          <img src="/images/project.png" alt="" />
+          <img src="images/projects/project.png" alt="" />
           <h2>Proyecto 01</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -23,7 +22,7 @@ export const CarouselProjects = () => {
           </p>
         </div>
         <div className="card">
-          <img src="/images/proyects/juanPedroMunera.png" alt="" />
+          <img src="/images/projects/juanPedroMunera.png" alt="" />
           <h2>Proyecto 02</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -31,7 +30,7 @@ export const CarouselProjects = () => {
           </p>
         </div>
         <div className="card">
-          <img src="/images/proyects/EdemcoJerico.png" alt="" />
+          <img src="/images/projects/EdemcoJerico.png" alt="" />
           <h2>Proyecto 03</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
