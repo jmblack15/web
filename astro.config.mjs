@@ -6,8 +6,4 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
-  // output: "server",
-  // adapter: vercel(),
-  site: 'https://ACJDevelopments.github.io',
-  base: '/Ciudad_renovable',
 });
