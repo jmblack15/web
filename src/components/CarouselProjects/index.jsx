@@ -1,44 +1,14 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
-import { AutoPlay } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/pagination';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Autoplay } from "swiper/modules";
 import './carouselProjects.css';
 
 
 export const CarouselProjects = () => {
   return (
     <>
-      <div style={{
-        display: 'flex',
-        justifyContent: 'space-evenly'
-      }}>
-        <div className="card">
-          <img src="images/projects/project.png" alt="" />
-          <h2>Proyecto 01</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-            ligula eget dolor.
-          </p>
-        </div>
-        <div className="card">
-          <img src="/images/projects/juanPedroMunera.png" alt="" />
-          <h2>Proyecto 02</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-            ligula eget dolor.
-          </p>
-        </div>
-        <div className="card">
-          <img src="/images/projects/EdemcoJerico.png" alt="" />
-          <h2>Proyecto 03</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-            ligula eget dolor.
-          </p>
-        </div>
-      </div>
-      {/* <Swiper
+      <Swiper
         slidesPerView={1}
         spaceBetween={20}
         slidesPerGroup={1}
@@ -58,7 +28,7 @@ export const CarouselProjects = () => {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          1400: {
+          1500: {
             slidesPerView: 3,
             spaceBetween: 50,
           },
@@ -94,7 +64,7 @@ export const CarouselProjects = () => {
             </p>
           </div>
         </SwiperSlide>
-      </Swiper> */}
+      </Swiper>
     </>
   )
 } 
