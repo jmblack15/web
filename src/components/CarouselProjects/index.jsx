@@ -8,7 +8,25 @@ import './carouselProjects.css';
 export const CarouselProjects = () => {
   return (
     <>
-      <Swiper
+      <div style={{ display: "flex", justifyContent: 'space-evenly' }}>
+        <div className="card">
+          <img src="/images/tiendasAra.png" alt="proyecto" />
+          <h2>Tiendas ARA</h2>
+        </div>
+        <div className="card">
+          <img src="/images/yokoMotor.png" alt="proyecto" />
+          <h2>Yokomotor</h2>
+        </div>
+        <div className="card">
+          <img src="/images/tronexVitelsa.png" alt="proyecto" />
+          <h2>Tronex Vitelsa</h2>
+        </div>
+        {/* <div className="card">
+          <img src="/images/veTower.png" alt="proyecto" />
+          <h2>Ve Tower</h2>
+        </div> */}
+      </div>
+      {/* <Swiper
         slidesPerView={1}
         spaceBetween={10}
         slidesPerGroup={1}
@@ -58,7 +76,7 @@ export const CarouselProjects = () => {
             <h2>Ve Tower</h2>
           </div>
         </SwiperSlide>
-      </Swiper>
+      </Swiper> */}
     </>
   )
 } 
