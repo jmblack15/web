@@ -10,14 +10,14 @@ export const CarouselProjects = () => {
     <>
       <Swiper
         slidesPerView={1}
-        spaceBetween={20}
+        spaceBetween={10}
         slidesPerGroup={1}
         loop={true}
         navigation={false}
         modules={[Autoplay]}
         className="mySwiper"
         autoplay={{
-          delay: 1500,
+          delay: 2000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -28,7 +28,7 @@ export const CarouselProjects = () => {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          1500: {
+          1200: {
             slidesPerView: 3,
             spaceBetween: 50,
           },
@@ -36,32 +36,26 @@ export const CarouselProjects = () => {
       >
         <SwiperSlide>
           <div className="card">
-            <img src="./images/project.png" alt="" />
-            <h2>Proyecto 01</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-              ligula eget dolor.
-            </p>
+            <img src="/images/tiendasAra.png" alt="proyecto" />
+            <h2>Tiendas ARA</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="card">
-            <img src="./images/project.png" alt="" />
-            <h2>Proyecto 01</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-              ligula eget dolor.
-            </p>
+            <img src="/images/yokoMotor.png" alt="proyecto" />
+            <h2>Yokomotor</h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="card">
-            <img src="./images/project.png" alt="" />
-            <h2>Proyecto 01</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-              ligula eget dolor.
-            </p>
+            <img src="/images/tronexVitelsa.png" alt="proyecto" />
+            <h2>Tronex Vitelsa</h2>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="card">
+            <img src="/images/veTower.png" alt="proyecto" />
+            <h2>Ve Tower</h2>
           </div>
         </SwiperSlide>
       </Swiper>

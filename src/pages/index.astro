@@ -13,21 +13,28 @@ import { FormContact } from "../components/FormContact";
 			<div>
 				<h2>Manifesto de marca</h2>
 				<p>
-					Creemos que para ser coherentes con el bienestar que suscitamos, es
-					necesario hablar desde las acciones y decisiones empresariales; por
-					eso, y aunque estamos de acuerdo en que la palabra teje y construye,
-					reflejamos nuestro impact compartiendo los resultados reales de lo que
-					hacemos, de nuestra cultura interna de trabajo y de los cambios
-					positivos en el planeta gracias a los proyectos sostenibles.
+					Queremos abrir la puerta al futuro energético que todos merecemos,
+					siendo protagonistas del sector eléctrico apostando por la energía
+					solar, pensando y trabajando por un futuro sostenible para nuestra
+					sociedad y para nuestro hogar. Somos más que una empresa; somos una
+					comunidad comprometida con un bien mayor. No podemos permitirnos el
+					lujo de ser solo actores económicos; tenemos un rol social y ecológico
+					que cumplir. Nos mueve la protección de nuestro hogar, de nuestro
+					planeta, lo sentimos como una responsabilidad moral y social. Aquí,
+					sostenibilidad no es una palabra de moda, es nuestra razón de ser.
+					Queremos ser más que un simple proveedor de energía solar. Queremos
+					ser agentes de cambio en un mundo que necesita urgentemente una nueva
+					dirección. Queremos ser la empresa que no solo transforme redes
+					eléctricas, sino que también transforme vidas y comunidades. Por eso,
+					energizar una ciudad con fuentes sostenibles no es solo un proyecto;
+					es el comienzo de un movimiento más grande, más justo, y más
+					equitativo. Y, honestamente, Ciudad suena como un muy buen primer paso
+					para eso
 				</p>
-
-				<div class="button_more">
-					<a href="">Leer Más</a>
-				</div>
 			</div>
 		</section>
 
-		<section class="about">
+		<section id="nosotros" class="about">
 			<div>
 				<div>
 					<h2>Quienes somos</h2>
@@ -47,18 +54,18 @@ import { FormContact } from "../components/FormContact";
 			</div>
 		</section>
 
-		<section class="cotizar">
+		<!-- <section class="cotizar">
 			<div>
 				<a href="">Cotizar Proyecto</a>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="impact">
 			<div>
-				<h2>Nuestro impact en números</h2>
+				<h2>Nuestro impacto en números</h2>
 				<div class="impac_line"></div>
 			</div>
-			<img src="./images/impacto.png" alt="impact" />
+			<img src="/images/impact.png" alt="impact" />
 		</section>
 
 		<section class="projects">
@@ -70,7 +77,7 @@ import { FormContact } from "../components/FormContact";
 			<span>Te presentamos nuestros proyectos más destacados.</span>
 
 			<div class="carousel_container">
-				<CarouselProjects client:load />
+				<CarouselProjects client:only="react" />
 			</div>
 
 			<div class="button_projects">
@@ -85,19 +92,19 @@ import { FormContact } from "../components/FormContact";
 			</div>
 
 			<div>
-				<CarouselClients />
+				<CarouselClients client:only="react" />
 			</div>
 		</section>
 
-		<section class="contact">
+		<section id="contacto" class="contact">
 			<div>
 				<h2>Contáctanos</h2>
 				<div class="line_contact"></div>
 			</div>
-			<span> Déjanos tus datos para obtener más información</span>
+			<span>Déjanos tus datos para brindarte más información</span>
 
 			<div>
-				<FormContact />
+				<FormContact client:only="react" />
 			</div>
 		</section>
 	</main>
@@ -112,14 +119,13 @@ import { FormContact } from "../components/FormContact";
 
 		.banner {
 			height: 80vh;
-			background-position-y: 30%;
-			background-image: url("/images/imgBanner.png");
+			background-image: url("/images/PhotoBanner.png");
 			background-repeat: no-repeat;
 			background-size: cover;
 		}
 
 		.manifest {
-			height: 211px;
+			height: 500px;
 			background: #00e95f;
 		}
 
@@ -130,13 +136,13 @@ import { FormContact } from "../components/FormContact";
 			display: flex;
 			padding: 30px 50px;
 			gap: 50px;
-			align-items: center;
 			justify-content: space-around;
+			align-items: center;
 		}
 
 		.manifest h2 {
 			color: #021731;
-			font-size: 40px;
+			font-size: 46px;
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
@@ -144,13 +150,12 @@ import { FormContact } from "../components/FormContact";
 
 		.manifest p {
 			width: 574px;
-			height: 114px;
 			color: #000;
-
 			font-size: 16px;
 			font-style: normal;
 			font-weight: 800;
 			line-height: normal;
+			text-align: justify;
 		}
 
 		.button_more {
@@ -215,6 +220,7 @@ import { FormContact } from "../components/FormContact";
 			font-style: normal;
 			font-weight: 400;
 			line-height: normal;
+			text-align: justify;
 		}
 
 		.button_about {
@@ -410,4 +416,3 @@ import { FormContact } from "../components/FormContact";
 		}
 	</style>
 </Layout>
- ../components/CarouselClients/CarouselProjects
