@@ -1,0 +1,79 @@
+.header nav {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.logo_container {
+  position: relative;
+  height: 100%;
+  display: block;
+  width: 45%;
+}
+
+.hamburguer {
+  display: flex;
+  flex-direction: column;
+  width: 2.5rem;
+  height: 3rem;
+  border: 0;
+  gap: 0.65rem;
+  justify-content: center;
+}
+
+.hamburguer div {
+  background-color: #021731;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all .5s;
+  transform-origin: left;
+}
+
+.hamburguer_active div:first-child {
+  transform: rotate(45deg);
+}
+
+.hamburguer_active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer_active div:last-child {
+  transform: rotate(-45deg);
+}
+
+.nav_links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #00E95F;
+  display: none;
+  margin: 0;
+}
+
+.nav_links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav_links a:hover,
+.nav_links a:focus {
+  background-color: #00E95F;
+}
+
+.expanded {
+  display: unset;
+}
+
+@media (min-width: 768px) {
+  .hamburguer {
+    display: none;
+  }
+}
