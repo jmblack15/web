@@ -36,7 +36,7 @@ export default function Home() {
           primer paso para eso.</p>
       </section>
 
-      <section className={styles.weare}>
+      <section id='nosotros' className={styles.weare}>
         <div className={styles.info}>
           <h2>Quienes somos</h2>
           <p>Ciudad Renovable es una empresa especializada en el diseño, construcción, operación y consultoría de proyectos de ingeniería con enfoque en energía solar, asegurando la eficiencia energética y optimizando el uso de los recursos.</p>
@@ -54,7 +54,7 @@ export default function Home() {
           <div className={styles.line}></div>
         </div>
 
-        <img src='/impact.png' alt='impacto'/>
+        <img src='/impact.png' alt='impacto' />
       </section>
 
       <section className={styles.projects}>
@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.contact}>
+      <section id='contacto' className={styles.contact}>
         <div>
           <h2>Contáctanos</h2>
           <div className={styles.line}></div>

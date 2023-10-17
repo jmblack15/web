@@ -46,9 +46,9 @@ const Header = () => {
         className={isBurguer ? `${styles.nav_links} ${styles.expanded}` : styles.nav_links}
       >
         <Link href="/">INICIO</Link>
-        <Link href="/#nosotros">NOSOTROS</Link>
+        <a href="/#nosotros">NOSOTROS</a>
         <Link href="/proyectos">PROYECTOS</Link>
-        <Link href="/#contacto">CONTACTO</Link>
+        <a href="/#contacto">CONTACTO</a>
       </div>
     </header>
   )
