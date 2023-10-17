@@ -72,8 +72,39 @@
   display: unset;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 840px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 123px;
+    padding: 0 2%;
+  }
+
+  .header nav{
+    width: 35vw;
+  }
+
+  .logo_container{
+    width: 100%;
+  }
+
   .hamburguer {
     display: none;
+  }
+
+  .nav_links {
+    margin-left: 5em;
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav_links a {
+    display: inline-block;
+    padding: 15px 20px;
+    border-left: 1px solid #00e95f;
+    width: 116px;
   }
 }

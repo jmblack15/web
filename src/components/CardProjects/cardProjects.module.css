@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.card img {
+  height: 347px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.card span {
+  color: #51516b;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
